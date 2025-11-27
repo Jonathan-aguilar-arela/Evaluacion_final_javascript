@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cajero Automático</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="paginicio">
+    <div id="page-bienvenida" class="page active page1">
+    <img src="./image/logo.jpg" alt="">
+    <h1>¡Hola! Te damos la <br> bienvenida a Scotiabank</h1>
+    <br>
+        <button class="primerboton" onclick="goToLogin()">Ingresar</button>
+    </div>
+</div>
+    
+<div id="page-login" class="page page2">
+        <img src="./image/logo2.jpg" alt="">
+        <br>
+        <h2>Ingrese su DNI</h2>
+        <input type="text" id="dniInput" placeholder="DNI"> 
+            <h2>Ingrese su PIN</h2>
+        <input type="password" id="pinLoginInput" maxlength="4" class="pin-input">
+        <div class="candado0">
+        <img class="candado2" src="./image/candado.jpg" alt="">
+        <p class="pin-tip">Tu clave es secreta. No permitas que otros la vean.</p>
+        </div>
+        <div class="footer2">
+        <button class="volver4" onclick="loginDni()">Ingresar</button>
+        <button class="salir2"  onclick="volverInicio()" class="salir">Salir</button>
+        <p id="loginError"></p>
+        </div>
+</div>
+    <div id="page-menu" class="page page3">
+        <div class="encabezadorojo">
+        <img class="logo3" src="./image/logo3.jpg" alt="">
+        </div>
+        <h2 id="welcomeUser"></h2>
+        <h2 class="miscuentas">Mis cuentas</h2>
+        <div class="flexpag3">
+        <div id="recuadroCuenta" class="cuadro-cuenta">
+        </div>
+        <div class="cuadro-cuenta2">
+        <button class="boton3" onclick="openPinPage('saldo')">Consultar saldo</button>
+        <button class="boton3"  onclick="openPinPage('deposito')">Ingresar monto</button>
+        <button class="boton3"  onclick="openPinPage('retiro')">Retirar monto</button>
+        <button class="boton3"  onclick="openTransfer()">Transferir dinero</button>
+        <button class="boton3"  >Cambiar PIN</button>
+        </div>
+        </div>
+        <div class="footerpag3">
+        <button class="entra3" onclick="volverLogin()">Volver</button>
+        <button class="salir salir3" onclick="volverInicio()">Salir</button>
+        </div>
+    </div>
+    <div id="page-saldo" class="page page4">
+                <img class="logotipo4" src="./image/logo2.jpg" alt="">
+        <h2 style="font-size: 28px; font-weight: bold; text-align: center;">
+        Su saldo actual es:
+        </h2>
+        <p class="saldo4" id="saldoActual"></p>
+        <button class="volver4" onclick="volverMenu()">Volver</button>
+        <button class="salir salir4" onclick="volverInicio()">Salir</button>
+    </div>
+    <div id="page-deposito" class="page page5">
+    <img class="logotipo4" src="./image/logo2.jpg" alt="">
+        <h2>Ingrese monto a depositar</h2>
+        <input type="number" id="depositoInput">
+
+<div class="opciondeposito">
+<button class="btndeposito" onclick="setMontoDeposito(20)">S/ 20</button>
+<button class="btndeposito" onclick="setMontoDeposito(1500)">S/ 1500</button>
+<button class="btndeposito" onclick="setMontoDeposito(100)">S/ 100</button>
+<button class="btndeposito" onclick="setMontoDeposito(2400)">S/ 2400</button>
+<button class="btndeposito" onclick="setMontoDeposito(500)">S/ 500</button>
+<button class="btndeposito" onclick="otroMontoDeposito()">Otro monto en Soles</button>
+</div>
+<div class="flexflex">
+        <button class="depositar4 flex5" onclick="depositar()">Depositar</button>
+        <button class="volver4 flex6" onclick="volverMenu()">Volver</button>
+        <button class="salir salir4 flex7" onclick="volverInicio()">Salir</button>
+        </div>
+        <br>
+        <br>
+        <p id="depositoMensaje"></p>
+    </div>
+    <div id="page-retiro" class="page page6">
+            <img class="logotipo4" src="./image/logo2.jpg" alt="">
+        <h2>Ingrese monto a retirar</h2>
+        <input type="number" id="retiroInput">
+
+<div class="opciondeposito">
+<button class="btndeposito" onclick="setMontoRetiro(20)">S/ 20</button>
+<button class="btndeposito" onclick="setMontoRetiro(1500)">S/ 1500</button>
+<button class="btndeposito" onclick="setMontoRetiro(100)">S/ 100</button>
+<button class="btndeposito" onclick="setMontoRetiro(2400)">S/ 2400</button>
+<button class="btndeposito" onclick="setMontoRetiro(500)">S/ 500</button>
+<button class="btndeposito" onclick="otroMontoRetiro()">Otro monto en Soles</button>
+</div>
+
+
+<div class="flexflex">
+        <button class="retirar4 flex5" onclick="retirar()">Retirar</button>
+        <button class="volver4 flex6" onclick="volverMenu()">Volver</button>
+        <button class="salir salir4 flex7" onclick="volverInicio()">Salir</button>
+        </div>
+        <br>
+        <br>
+        <p id="retiroMensaje"></p>
+    </div>
+<div id="page-transfer" class="page page7">
+    <img class="logotipo4" src="./image/logo2.jpg" alt="">
+    <h2>Transferir dinero</h2>
+<label>Ingrese DNI del destinatario:</label>
+<input type="number" id="dniDestino" placeholder="DNI del destinatario">
+<input type="number" id="transferMonto" placeholder="Monto a transferir">
+<div class="opciondeposito">
+<button class="btndeposito" onclick="setMontoTrans(20)">S/ 20</button>
+<button class="btndeposito" onclick="setMontoTrans(1500)">S/ 1500</button>
+<button class="btndeposito" onclick="setMontoTrans(100)">S/ 100</button>
+<button class="btndeposito" onclick="setMontoTrans(2400)">S/ 2400</button>
+<button class="btndeposito" onclick="setMontoTrans(500)">S/ 500</button>
+<button class="btndeposito" onclick="setMontoTrans()">Otro monto en Soles</button>
+</div>
+<div class="flexflex">
+    <button class="transferir7 flex5" onclick="transferir()">Transferir</button>
+    <button class="volver4 flex6" onclick="volverMenu()">Volver</button>
+    <button class="salir salir4 flex7" onclick="volverInicio()">Salir</button>
+    </div>
+    <br>
+    <p id="transferMensaje"></p>
+</div>
+<div id="page-procesando" class="page page8">
+    <div class="loader"></div>
+    <div class="operaciones8">
+    <h2>Estamos procesando <span>tu operación</span></h2>
+    <p class="procesando-texto">
+        Sabías que desde el app y la web puedes:
+    </p>
+    <div class="procesando-opciones">
+        <div class="flex81">
+            <img src="./image/icono1.jpg" alt="">
+            <p>Pagar tus recibos</p>
+        </div>
+        <div class="flex82">
+            <img src="./image/icono2.jpg" alt="">
+            <p>Pagar tu Tarjeta de Crédito</p>
+        </div>
+        <div class="flex83">
+            <img src="./image/icono3.jpg" alt="">
+            <p>Hacer transferencias</p>
+        </div>
+    </div>
+    <div class="apps">
+    <div class="footer84">
+            <img class="icono84" src="./image/icono4.jpg" alt="">
+    </div>
+    </div>      
+    </div>
+</div>
+    <script src="main.js">
+</script>
+</body>
+</html>

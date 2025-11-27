@@ -1,0 +1,491 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background: rgb(172, 167, 167);
+    color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
+.page1{
+    width: 1200px;      
+    height: 800px;      
+    background-color: red;
+    margin: 50px auto; 
+    padding: 15px;     
+    text-align: center;
+    font-family: Arial;
+    border-radius: 0px;
+    margin: 50px auto;   
+    text-align: center;
+    padding-top: 15px;    
+  font-family: "Momo Trust Display", sans-serif;
+  font-size: 25px;
+
+}
+
+.paginicio img{
+    width: 250px;
+    margin-top: 70px;
+    margin-bottom: 2px;  
+}
+
+.primerboton{
+    background-color: #830627; 
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.page2 img{
+margin-right:700px;
+margin-bottom: 160px;
+}
+
+.page2{
+background-color: white;
+color: black;
+width: 1200px;       
+height: 800px;     
+margin: 50px auto;  
+padding: 15px;     
+text-align: center;
+font-family: Arial;
+border-radius: 0px;
+display: flex;         
+flex-direction: column; 
+align-items: center;   
+gap: 100px;             
+}
+
+
+.dni-input::-webkit-outer-spin-button,
+.dni-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.pin-input {
+    font-size: 20px;        
+    letter-spacing: 15px;   
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid black;  
+    outline: none;
+    padding: 10px 5px;
+    width: 220px;
+}
+
+.candado0{
+    display: flex;
+    align-items: center;        
+    justify-content: center;    
+    gap: 8px;                   
+    margin-top: 5px;
+}
+
+.candado2 {
+    flex: 1;
+    max-width: 30px;            
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.candado0 p{
+ margin-left: -700px;
+margin-top: -140px;
+margin-bottom: 10px;
+ 
+}
+
+.footer2{
+    margin-top: -130px;
+}
+
+.salir2{
+    width: 100px;
+    background-color: red;
+
+}
+
+
+
+.page3{
+    background-color: white;
+    color: black;
+    width: 1200px;      
+    height: 800px;      
+    margin: 50px auto; 
+    padding: 15px;      
+    text-align: center;
+    font-family: Arial;
+    border-radius: 0px;   
+}
+
+
+.encabezadorojo{
+    background-color: red;
+    color: black;
+    width: 1200px;      
+    height: 200px;      
+    margin-top: -15px;
+    margin-left: -15px;
+    align-items: center;   
+}
+
+.logo3{
+    width: 350px;
+    margin-top: 75px;
+    margin-right: 800px;
+}
+
+
+#welcomeUser {
+    font-size: 24px;      
+    margin-top: 20px;     
+    margin-bottom: 10px;  
+    text-align: left;   
+    color: #333;        
+}
+
+.miscuentas{
+    font-size: 24px;      
+    margin-top: 20px;     
+    margin-bottom: 10px;  
+    text-align: left;   
+    color: #333;        
+}
+
+.cuadro-cuenta {
+max-width: 400px;       
+height: 45px;          
+border: 2px solid #000; 
+display: flex;
+align-items: center;   
+justify-content: flex-start; 
+ padding-left: 10px;    
+font-size: 18px;
+font-weight: bold;
+margin-top: 10px;
+}
+
+
+.flexpag3{
+display: flex;
+}
+
+.cuadro-cuenta{
+flex: 1;
+}
+
+
+.cuadro-cuenta2{
+flex: 1; 
+}
+
+
+.footerpag3{
+    margin-top: 70px;
+    display: flex;
+    gap: 1200px;
+}
+
+.entra3{
+    max-width: 100px;
+    flex: 1;
+}
+
+.salir3{
+    width: 100px;
+    margin-left: -900px;
+}
+
+
+.boton3{
+    background-color: rgb(137, 139, 141);
+        border: 1px solid rgb(99, 99, 100);
+    width: 300px;
+    height: 50px;
+}
+
+
+.page4{
+
+    background-color: white;
+    color: black;
+    width: 1200px;       
+    height: 800px;      
+    margin: 50px auto;  
+    padding: 15px;      
+    text-align: center;
+    font-family: Arial;
+    border-radius: 0px;   
+}
+
+
+.logotipo4{
+margin-right:700px;
+margin-bottom: 80px;
+}
+
+.saldo4{
+margin-top: 50px;
+font-size: 40px;
+font-weight: bold;
+}
+
+.volver4{
+    margin-top: 40px;
+    width: 100px;
+}
+
+.salir4{
+    width: 100px;
+}
+
+.page5{
+
+background-color: white;
+color: black;
+width: 1200px;      
+height: 800px;      
+margin: 50px auto;  
+padding: 15px;     
+text-align: center;
+font-family: Arial;
+border-radius: 0px;   
+}
+
+.opciondeposito {
+display: grid;
+grid-template-columns: 1fr 1fr; 
+gap: 20px; 
+width: 80%;
+margin: auto;
+margin-top: 50px;
+}
+
+
+.btndeposito {
+width: 300px;
+height: 50px;
+color: black;
+background-color: white;
+border: 2px solid #d9d9d9;
+border-radius: 8px;
+padding: 20px 10px;
+font-size: 22px;
+font-weight: bold;
+transition: 0.2s;
+text-align: center;
+align-items: center;
+justify-content: center;
+
+display: flex;
+justify-content: center; 
+align-items: center;     
+height: 50px;           
+}
+
+.depositar4{
+width: 100px;
+}
+
+.flexflex{
+display: flex;
+gap: 20px;
+}
+
+.flex5{
+flex: 1;
+max-width: 100px;
+height: 50px;
+margin-top: 50px;
+padding: 12px;
+}
+
+.flex6{
+flex: 1;
+max-width: 100px;
+height: 50px;
+margin-top: 50px;
+padding: 12px;
+}
+
+.flex7{
+flex: 1;
+max-width: 100px;
+height: 50px;
+margin-top: 50px;
+padding: 12px;
+}
+
+.page6{
+
+background-color: white;
+color: black;
+width: 1200px;      
+height: 800px;      
+margin: 50px auto;  
+padding: 15px;      
+text-align: center;
+font-family: Arial;
+border-radius: 0px;   
+}
+
+.retirar4{
+width: 100px;
+}
+
+.page7{
+background-color: white;
+color: black;
+width: 1200px;   
+height: 800px;     
+margin: 50px auto; 
+padding: 15px;      
+text-align: center;
+font-family: Arial;
+border-radius: 0px;   
+}
+
+.transferir7{
+
+width: 100px;
+}
+
+
+.page8{
+background-color: white;
+color: black;
+width: 1200px;     
+height: 800px;    
+margin: 50px auto;  
+padding: 15px;      
+text-align: center;
+font-family: Arial;
+border-radius: 0px;   
+align-items: center;
+justify-content: center;
+text-align: center;
+gap: 20px;
+}
+
+.loader {
+width: 130px;
+height: 130px;
+border: 6px solid #f3f3f3;    
+border-top-color: #e2001a;    
+border-radius: 50%;
+animation: spin 1s linear infinite;
+text-align: center;
+align-items:center;
+justify-content: center;
+margin-top: 50px;
+margin-left: 540px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.operaciones8{
+margin-top: 100px;
+}
+
+.procesando-opciones{
+display: flex;
+margin-top: 50px;
+}
+
+.flex81{
+flex: 1;
+gap: 10px;
+}
+
+.flex82{
+flex: 1;
+gap: 10px;
+}
+
+.flex83{
+flex: 1;
+gap: 10px;
+}
+
+
+.footer84{
+margin-top: 150px;
+text-align: center;
+align-items:center;
+justify-content: center;
+
+}
+
+
+.icono84{
+max-width:300px;
+flex: 1;
+margin-right:-50px;
+}
+
+
+.icono84 img{
+width: 100px;
+flex: 1;
+    
+}
+
+
+.page {
+display: none;
+
+}
+
+.active {
+    display: block;
+}
+
+
+button {
+display: block;
+margin: 10px auto;
+padding: 12px 20px;
+background: #2c3e5e;
+color: white;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+font-size: 16px;
+}
+
+button:hover {
+background: #35346e;
+}
+
+
+button.btndeposito:hover {
+background-color: #dfdfdf;
+}
+
+input, select {
+padding: 10px;
+margin: 10px;
+width: 60%;
+border-radius: 5px;
+}
+
+.salir {
+background: red;
+}
